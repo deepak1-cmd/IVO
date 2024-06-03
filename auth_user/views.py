@@ -251,3 +251,21 @@ class Dashboard(APIView):
         # Render the HTML template for verify user
         return render(request, 'index.html')
         
+
+class welcome(APIView):
+    """
+    API endpoint for change user password with otp.
+    """
+    
+    def get(self, request):
+        # Render the HTML template for verify user
+        return render(request, 'welcome-page.html')
+
+class project(APIView):
+    """
+    API endpoint for change user password with otp.
+    """
+    
+    def get(self, request):
+        # Render the HTML template for verify user
+        return render(request, 'register-steps.html')

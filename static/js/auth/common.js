@@ -12,7 +12,7 @@
    return passwordRegex.test(password);
  }
 
- export function encodeEmail(email) {
+function encodeEmail(email) {
    let encodedEmail = '';
    for (let i = 0; i < email.length; i++) {
      encodedEmail += String.fromCharCode(email.charCodeAt(i) + 1);
